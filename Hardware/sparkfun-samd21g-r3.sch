@@ -24150,6 +24150,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="JP8" library="SparkFun-Connectors" deviceset="M02" device="-JST-2-PTH-NO_SILK"/>
+<part name="JP9" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -24313,6 +24314,7 @@ VDD Range: 1.62-3.63V</text>
 <instance part="SUPPLY5" gate="G$1" x="149.86" y="96.52"/>
 <instance part="SUPPLY19" gate="G$1" x="172.72" y="251.46"/>
 <instance part="JP8" gate="G$1" x="50.8" y="154.94"/>
+<instance part="JP9" gate="G$1" x="50.8" y="167.64"/>
 </instances>
 <busses>
 </busses>
@@ -24473,6 +24475,10 @@ VDD Range: 1.62-3.63V</text>
 <junction x="60.96" y="142.24"/>
 <pinref part="JP8" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="167.64" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="167.64" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
+<junction x="60.96" y="154.94"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VSS"/>
@@ -25287,6 +25293,10 @@ VDD Range: 1.62-3.63V</text>
 <junction x="63.5" y="144.78"/>
 <pinref part="JP8" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="170.18" x2="63.5" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="170.18" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
+<junction x="63.5" y="157.48"/>
 </segment>
 </net>
 <net name="N$13" class="0">
