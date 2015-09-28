@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24091,8 +24091,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP2" library="SparkFun-Connectors" deviceset="USB-AB" device="CONN-11794"/>
 <part name="U2" library="SparkFun-DigitalIC" deviceset="74AHC1G125" device=""/>
 <part name="R4" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
-<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="330OHM1/10W1%(0603)" device="" value="330"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL" device="DMG2307L" value="2.5A/30V"/>
@@ -24155,6 +24153,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP9" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24254,8 +24254,6 @@ VDD Range: 1.62-3.63V</text>
 <instance part="JP2" gate="G$1" x="17.78" y="220.98" rot="R180"/>
 <instance part="U2" gate="G$1" x="86.36" y="25.4"/>
 <instance part="R4" gate="G$1" x="63.5" y="35.56" rot="R90"/>
-<instance part="SUPPLY2" gate="G$1" x="63.5" y="43.18"/>
-<instance part="SUPPLY4" gate="G$1" x="101.6" y="33.02"/>
 <instance part="GND9" gate="1" x="71.12" y="17.78"/>
 <instance part="R2" gate="G$1" x="55.88" y="27.94"/>
 <instance part="Q1" gate="G$1" x="78.74" y="226.06" smashed="yes" rot="R90">
@@ -24322,6 +24320,8 @@ VDD Range: 1.62-3.63V</text>
 <instance part="JP9" gate="G$1" x="50.8" y="167.64"/>
 <instance part="R12" gate="G$1" x="208.28" y="213.36" rot="R90"/>
 <instance part="GND27" gate="1" x="208.28" y="203.2"/>
+<instance part="SUPPLY2" gate="G$1" x="63.5" y="43.18"/>
+<instance part="SUPPLY4" gate="G$1" x="101.6" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -24590,17 +24590,6 @@ VDD Range: 1.62-3.63V</text>
 <wire x1="182.88" y1="165.1" x2="180.34" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="165.1" x2="180.34" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
-<wire x1="63.5" y1="43.18" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="VCC"/>
-<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="99.06" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="27.94" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
@@ -24893,6 +24882,17 @@ VDD Range: 1.62-3.63V</text>
 <wire x1="190.5" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="93.98" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
+<wire x1="63.5" y1="43.18" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VCC"/>
+<wire x1="99.06" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="27.94" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VIN"/>
+</segment>
 </net>
 <net name="A3" class="0">
 <segment>
@@ -25071,6 +25071,9 @@ VDD Range: 1.62-3.63V</text>
 <junction x="63.5" y="27.94"/>
 <wire x1="63.5" y1="27.94" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="25.4" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
+<junction x="71.12" y="25.4"/>
+<label x="68.58" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="USB_HOST_EN" class="0">
