@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
@@ -3906,15 +3906,15 @@ design rules under a new name.</description>
 <wire x1="40.767" y1="31.75" x2="44.45" y2="31.75" width="0.2032" layer="16"/>
 <wire x1="44.45" y1="31.75" x2="52.07" y2="39.37" width="0.2032" layer="16"/>
 </signal>
-<signal name="D2">
+<signal name="D4">
 <contactref element="U4" pad="13"/>
-<contactref element="JP7" pad="D2"/>
 <wire x1="40.85" y1="34.73" x2="40.85" y2="35.643" width="0.2032" layer="1"/>
-<via x="45.466" y="37.719" extent="1-16" drill="0.381"/>
+<via x="42.926" y="37.719" extent="1-16" drill="0.381"/>
 <wire x1="40.85" y1="35.643" x2="42.926" y2="37.719" width="0.2032" layer="1"/>
-<wire x1="42.926" y1="37.719" x2="45.466" y2="37.719" width="0.2032" layer="1"/>
-<wire x1="45.466" y1="37.719" x2="46.99" y2="39.243" width="0.2032" layer="16"/>
-<wire x1="46.99" y1="39.243" x2="46.99" y2="50.8" width="0.2032" layer="16"/>
+<contactref element="JP7" pad="D4"/>
+<wire x1="42.926" y1="37.719" x2="42.926" y2="47.244" width="0.2032" layer="16"/>
+<wire x1="42.926" y1="47.244" x2="41.91" y2="48.26" width="0.2032" layer="16"/>
+<wire x1="41.91" y1="48.26" x2="41.91" y2="50.8" width="0.2032" layer="16"/>
 </signal>
 <signal name="D3">
 <contactref element="U4" pad="14"/>
@@ -3931,12 +3931,12 @@ design rules under a new name.</description>
 <wire x1="44.196" y1="36.449" x2="42.926" y2="36.449" width="0.2032" layer="1"/>
 <wire x1="42.926" y1="36.449" x2="41.275" y2="34.798" width="0.2032" layer="1"/>
 </signal>
-<signal name="D4">
+<signal name="D2">
 <contactref element="U4" pad="23"/>
-<contactref element="JP7" pad="D4"/>
-<wire x1="35.85" y1="37.628" x2="41.91" y2="43.688" width="0.2032" layer="1"/>
-<wire x1="41.91" y1="43.688" x2="41.91" y2="50.8" width="0.2032" layer="1"/>
+<wire x1="35.85" y1="37.628" x2="46.99" y2="48.768" width="0.2032" layer="1"/>
 <wire x1="35.85" y1="34.73" x2="35.85" y2="37.628" width="0.2032" layer="1"/>
+<contactref element="JP7" pad="D2"/>
+<wire x1="46.99" y1="48.768" x2="46.99" y2="50.8" width="0.2032" layer="1"/>
 </signal>
 <signal name="D5">
 <contactref element="U4" pad="24"/>
@@ -4551,8 +4551,8 @@ design rules under a new name.</description>
 <approved hash="19,16,7fcaa9a98671a31e"/>
 <approved hash="19,16,8f5c58942351bdd4"/>
 <approved hash="3,16,8b6881f255e35f79"/>
-<approved hash="19,1,2c5258665ea02a94"/>
 <approved hash="19,1,6de4d9d0df376b03"/>
+<approved hash="19,1,2c5258665ea02a94"/>
 <approved hash="19,1,65f8d1ccd0e464d0"/>
 <approved hash="4,1,d22e0bfca6d53f0f"/>
 <approved hash="4,1,039699d4029cbe77"/>
@@ -4566,8 +4566,8 @@ design rules under a new name.</description>
 <approved hash="19,16,ce5798a12d28bed2"/>
 <approved hash="19,16,5bf934cbcbd0e01d"/>
 <approved hash="19,16,98df0af371d8a70b"/>
-<approved hash="19,16,d4ea383f2266d072"/>
 <approved hash="19,16,31879e4fcf9eecb2"/>
+<approved hash="19,16,d4ea383f2266d072"/>
 </errors>
 </board>
 </drawing>

@@ -24730,16 +24730,16 @@ VDD Range: 1.62-3.63V</text>
 <label x="218.44" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="D2" class="0">
+<net name="D4" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PA08(I2C/AIN16/SER0:0+)"/>
 <wire x1="375.92" y1="241.3" x2="378.46" y2="241.3" width="0.1524" layer="91"/>
 <label x="378.46" y="241.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="G$1" pin="D2"/>
-<wire x1="215.9" y1="111.76" x2="218.44" y2="111.76" width="0.1524" layer="91"/>
-<label x="218.44" y="111.76" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP7" gate="G$1" pin="D4"/>
+<wire x1="215.9" y1="106.68" x2="218.44" y2="106.68" width="0.1524" layer="91"/>
+<label x="218.44" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -24754,16 +24754,16 @@ VDD Range: 1.62-3.63V</text>
 <label x="218.44" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="D4" class="0">
+<net name="D2" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PA14(XIN/SER2:2+)"/>
 <wire x1="375.92" y1="226.06" x2="378.46" y2="226.06" width="0.1524" layer="91"/>
 <label x="378.46" y="226.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="G$1" pin="D4"/>
-<wire x1="215.9" y1="106.68" x2="218.44" y2="106.68" width="0.1524" layer="91"/>
-<label x="218.44" y="106.68" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP7" gate="G$1" pin="D2"/>
+<wire x1="215.9" y1="111.76" x2="218.44" y2="111.76" width="0.1524" layer="91"/>
+<label x="218.44" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D5" class="0">
