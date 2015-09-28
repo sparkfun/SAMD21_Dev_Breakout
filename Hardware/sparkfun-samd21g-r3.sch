@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -21846,7 +21846,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <symbols>
-<symbol name="V-REG-LDO">
+<symbol name="V-REG-LDO_NO-BP">
 <wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-7.62" y2="7.62" width="0.4064" layer="94"/>
@@ -21854,10 +21854,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-7.62" y="9.144" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="IN" x="-10.16" y="5.08" visible="pin" length="short" direction="in"/>
-<pin name="GND" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short" direction="in"/>
 <pin name="OUT" x="7.62" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="EN" x="-10.16" y="-5.08" visible="pin" length="short" direction="in"/>
-<pin name="BP" x="7.62" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="EN" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
+<pin name="NC" x="7.62" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
 </symbol>
 <symbol name="PTC">
 <wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
@@ -21886,40 +21886,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="V_REG_MIC5219" prefix="U" uservalue="yes">
-<description>&lt;b&gt;V_REG MIC5219&lt;/b&gt;
-Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5219. BP (by-pass) pin is used to lower output noise with 470pF cap, may be left open.</description>
+<deviceset name="V_REG_AP2112" prefix="U">
+<description>&lt;h3&gt;AP2112 - 600mA CMOS LDO Regulator w/ Enable&lt;/h3&gt;
+&lt;p&gt;The AP2112 is CMOS process low dropout linear regulator with enable function, the regulator delivers a guaranteed 600mA (min.) continuous load current.&lt;/p&gt;
+&lt;p&gt;Features&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Output Voltage Accuracy: ±1.5% &lt;/li&gt;
+&lt;li&gt;Output Current: 600mA (Min.) &lt;/li&gt;
+&lt;li&gt;Foldback Short Current Protection: 50mA &lt;/li&gt;
+&lt;li&gt;Enable Function to Turn ON/OFF VOUT&lt;/li&gt;
+&lt;li&gt;Low Dropout Voltage (3.3V): 250mV (Typ.) @IOUT=600mA &lt;/li&gt;
+&lt;li&gt;Excellent Load Regulation: 0.2%/A (Typ.) &lt;/li&gt;
+&lt;li&gt;Excellent Line Regulation: 0.02%/V (Typ.) &lt;/li&gt;
+&lt;li&gt;Low Quiescent Current: 55μA (Typ.)&lt;/li&gt;
+&lt;li&gt;Low Standby Current: 0.01μA (Typ.)&lt;/li&gt;
+&lt;li&gt;Low Output Noise: 50μVRMS &lt;/li&gt;
+&lt;li&gt;PSRR: 100Hz -65dB, 1kHz -65dB &lt;/li&gt;
+&lt;li&gt; OTSD Protection &lt;/li&gt;
+&lt;li&gt;Stable  with  1.0μF Flexible Cap: Ceramic, Tantalum and Aluminum Electrolytic &lt;/li&gt;
+&lt;li&gt;Operation Temperature Range: -40°C to 85°C &lt;/li&gt;
+&lt;li&gt;ESD: MM 400V, HBM 4000V&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="V-REG-LDO" x="2.54" y="0"/>
+<gate name="G$1" symbol="V-REG-LDO_NO-BP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="3.3V" package="SOT23-5">
+<device name="K-3.3V" package="SOT23-5">
 <connects>
-<connect gate="G$1" pin="BP" pad="4"/>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC" pad="4"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="VREG-09872"/>
-<attribute name="VALUE" value="MIC5219 3.3V" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="5V" package="SOT23-5">
-<connects>
-<connect gate="G$1" pin="BP" pad="4"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="VREG-10107"/>
-<attribute name="VALUE" value="MIC5219 5V" constant="no"/>
+<attribute name="PROD_ID" value="VREG-12457"/>
+<attribute name="VALUE" value="3.3V"/>
 </technology>
 </technologies>
 </device>
@@ -24069,7 +24073,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U3" library="SparkFun-PowerIC" deviceset="V_REG_MIC5219" device="3.3V" value="MIC5219 3.3V"/>
+<part name="U3" library="SparkFun-PowerIC" deviceset="V_REG_AP2112" device="K-3.3V" value="3.3V"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -24243,7 +24247,7 @@ VDD Range: 1.62-3.63V</text>
 <instance part="GND14" gate="1" x="152.4" y="210.82"/>
 <instance part="GND17" gate="1" x="198.12" y="203.2"/>
 <instance part="D4" gate="G$1" x="198.12" y="233.68"/>
-<instance part="C3" gate="G$1" x="99.06" y="218.44" rot="MR0"/>
+<instance part="C3" gate="G$1" x="101.6" y="218.44" rot="MR0"/>
 <instance part="C5" gate="G$1" x="132.08" y="218.44"/>
 <instance part="Q2" gate="G$1" x="198.12" y="220.98" rot="MR0"/>
 <instance part="SUPPLY9" gate="G$1" x="198.12" y="251.46"/>
@@ -24394,11 +24398,11 @@ VDD Range: 1.62-3.63V</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="109.22" y1="220.98" x2="106.68" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="220.98" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="215.9" x2="106.68" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="215.9" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="213.36" x2="106.68" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="215.9" x2="99.06" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="213.36" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="215.9" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="213.36" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
 <junction x="106.68" y="213.36"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 </segment>
@@ -24826,17 +24830,17 @@ VDD Range: 1.62-3.63V</text>
 </net>
 <net name="VIN" class="0">
 <segment>
-<wire x1="99.06" y1="223.52" x2="99.06" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="223.52" x2="101.6" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="99.06" y1="226.06" x2="104.14" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="226.06" x2="109.22" y2="226.06" width="0.1524" layer="91"/>
-<junction x="99.06" y="226.06"/>
+<wire x1="101.6" y1="226.06" x2="106.68" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="226.06" x2="109.22" y2="226.06" width="0.1524" layer="91"/>
+<junction x="101.6" y="226.06"/>
 <pinref part="U3" gate="G$1" pin="EN"/>
-<wire x1="109.22" y1="215.9" x2="104.14" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="215.9" x2="104.14" y2="226.06" width="0.1524" layer="91"/>
-<junction x="104.14" y="226.06"/>
+<wire x1="109.22" y1="220.98" x2="106.68" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="220.98" x2="106.68" y2="226.06" width="0.1524" layer="91"/>
+<junction x="106.68" y="226.06"/>
 <wire x1="88.9" y1="226.06" x2="93.98" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="226.06" x2="99.06" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="226.06" x2="101.6" y2="226.06" width="0.1524" layer="91"/>
 <junction x="88.9" y="226.06"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
