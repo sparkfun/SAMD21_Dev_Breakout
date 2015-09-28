@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -286,6 +286,11 @@ R3 Breakout</text>
 <wire x1="11.43" y1="22.225" x2="10.414" y2="22.225" width="0.254" layer="22"/>
 <wire x1="10.922" y1="16.637" x2="10.922" y2="15.621" width="0.254" layer="22"/>
 <wire x1="51.816" y1="31.75" x2="52.578" y2="31.75" width="0.2032" layer="21"/>
+<text x="24.13" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">A13</text>
+<text x="26.67" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">B22</text>
+<text x="29.21" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">B23</text>
+<text x="31.75" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">SWCLK</text>
+<text x="34.29" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">SWDIO</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -3593,12 +3598,15 @@ design rules under a new name.</description>
 <element name="STANDOFF4" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="54.61" y="35.56"/>
 <element name="JP5" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="34.29" y="10.16" rot="R180"/>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.4" value="SFE_LOGO_NAME_FLAME.4_INCH" x="50.8" y="7.62" rot="MR45"/>
-<element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="OSHW-LOGOL" x="17.78" y="36.83" rot="MR0"/>
+<element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="OSHW-LOGOL" x="12.7" y="27.305" rot="MR0"/>
 <element name="D1" library="SparkFun-DiscreteSemi" package="SOD-323" value="BAT20J" x="12.7" y="19.05" rot="R90">
 <attribute name="PROD_ID" value="DIO-11623" x="12.7" y="19.05" size="0.889" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
 <element name="JP8" library="SparkFun-Connectors" package="JST-2-PTH-NS" value="" x="6.477" y="19.177" rot="R90"/>
 <element name="JP9" library="SparkFun-Connectors" package="1X02_NO_SILK" value="" x="10.922" y="17.907" rot="R90"/>
+<element name="R12" library="SparkFun-Resistors" package="0603-RES" value="100k" x="10.16" y="32.385" rot="R270">
+<attribute name="PROD_ID" value="RES-07828" x="10.16" y="32.385" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3705,6 +3713,7 @@ design rules under a new name.</description>
 <wire x1="42.35" y1="29.73" x2="43.422" y2="29.73" width="0.254" layer="1"/>
 <wire x1="42.35" y1="29.73" x2="41.39" y2="29.73" width="0.254" layer="1"/>
 <wire x1="41.39" y1="29.73" x2="40.64" y2="30.48" width="0.254" layer="1"/>
+<contactref element="R12" pad="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="R11" pad="2"/>
@@ -4389,9 +4398,7 @@ design rules under a new name.</description>
 <wire x1="24.003" y1="23.749" x2="19.177" y2="28.575" width="0.2032" layer="16"/>
 <via x="19.177" y="28.575" extent="1-16" drill="0.381"/>
 <wire x1="8.56" y1="31.75" x2="8.545" y2="31.735" width="0.2032" layer="1"/>
-<wire x1="19.177" y1="28.575" x2="13.335" y2="28.575" width="0.2032" layer="1"/>
-<wire x1="13.335" y1="28.575" x2="10.175" y2="31.735" width="0.2032" layer="1"/>
-<wire x1="10.175" y1="31.735" x2="8.545" y2="31.735" width="0.2032" layer="1"/>
+<wire x1="19.177" y1="28.575" x2="14.605" y2="28.575" width="0.2032" layer="1"/>
 <wire x1="35.687" y1="30.353" x2="35.687" y2="31.623" width="0.2032" layer="16"/>
 <wire x1="35.687" y1="31.623" x2="35.306" y2="32.004" width="0.2032" layer="16"/>
 <wire x1="35.306" y1="32.004" x2="33.02" y2="32.004" width="0.2032" layer="16"/>
@@ -4401,6 +4408,12 @@ design rules under a new name.</description>
 <wire x1="34.925" y1="27.94" x2="36.068" y2="29.083" width="0.2032" layer="16"/>
 <wire x1="36.068" y1="29.083" x2="36.068" y2="29.972" width="0.2032" layer="16"/>
 <wire x1="36.068" y1="29.972" x2="35.687" y2="30.353" width="0.2032" layer="16"/>
+<contactref element="R12" pad="2"/>
+<wire x1="14.605" y1="28.575" x2="13.12" y2="28.575" width="0.2032" layer="1"/>
+<wire x1="13.12" y1="28.575" x2="10.16" y2="31.535" width="0.2032" layer="1"/>
+<wire x1="10.16" y1="31.535" x2="9.359" y2="31.535" width="0.2032" layer="1"/>
+<wire x1="8.545" y1="31.735" x2="9.159" y2="31.735" width="0.2032" layer="1"/>
+<wire x1="9.159" y1="31.735" x2="9.359" y2="31.535" width="0.2032" layer="1"/>
 </signal>
 <signal name="PA13">
 <contactref element="U4" pad="22"/>

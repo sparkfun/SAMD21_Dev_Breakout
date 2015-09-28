@@ -24153,6 +24153,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="JP8" library="SparkFun-Connectors" deviceset="M02" device="-JST-2-PTH-NO_SILK"/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK"/>
+<part name="R12" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
+<part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24239,7 +24241,7 @@ VDD Range: 1.62-3.63V</text>
 <instance part="R8" gate="G$1" x="198.12" y="243.84" rot="R90"/>
 <instance part="SUPPLY7" gate="G$1" x="152.4" y="251.46"/>
 <instance part="GND14" gate="1" x="152.4" y="210.82"/>
-<instance part="GND17" gate="1" x="198.12" y="210.82"/>
+<instance part="GND17" gate="1" x="198.12" y="203.2"/>
 <instance part="D4" gate="G$1" x="198.12" y="233.68"/>
 <instance part="C3" gate="G$1" x="99.06" y="218.44" rot="MR0"/>
 <instance part="C5" gate="G$1" x="132.08" y="218.44"/>
@@ -24318,6 +24320,8 @@ VDD Range: 1.62-3.63V</text>
 <instance part="SUPPLY19" gate="G$1" x="172.72" y="251.46"/>
 <instance part="JP8" gate="G$1" x="50.8" y="154.94"/>
 <instance part="JP9" gate="G$1" x="50.8" y="167.64"/>
+<instance part="R12" gate="G$1" x="208.28" y="213.36" rot="R90"/>
+<instance part="GND27" gate="1" x="208.28" y="203.2"/>
 </instances>
 <busses>
 </busses>
@@ -24406,7 +24410,7 @@ VDD Range: 1.62-3.63V</text>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="198.12" y1="213.36" x2="198.12" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="205.74" x2="198.12" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP6" gate="G$1" pin="GND@3"/>
@@ -24514,6 +24518,11 @@ VDD Range: 1.62-3.63V</text>
 <wire x1="25.4" y1="261.62" x2="30.48" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="30.48" y1="261.62" x2="30.48" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+<wire x1="208.28" y1="205.74" x2="208.28" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -25238,7 +25247,11 @@ VDD Range: 1.62-3.63V</text>
 <segment>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="205.74" y1="220.98" x2="208.28" y2="220.98" width="0.1524" layer="91"/>
-<label x="208.28" y="220.98" size="1.27" layer="95" xref="yes"/>
+<label x="210.82" y="220.98" size="1.27" layer="95" xref="yes"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="220.98" x2="210.82" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="218.44" x2="208.28" y2="220.98" width="0.1524" layer="91"/>
+<junction x="208.28" y="220.98"/>
 </segment>
 </net>
 <net name="PA13" class="0">
