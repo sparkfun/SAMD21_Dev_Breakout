@@ -24315,9 +24315,9 @@ VDD Range: 1.62-3.63V</text>
 <instance part="LOGO4" gate="G$1" x="317.5" y="10.16"/>
 <instance part="D1" gate="G$1" x="83.82" y="144.78"/>
 <instance part="SUPPLY16" gate="G$1" x="104.14" y="147.32"/>
-<instance part="SUPPLY17" gate="G$1" x="177.8" y="96.52"/>
+<instance part="SUPPLY17" gate="G$1" x="175.26" y="96.52"/>
 <instance part="SUPPLY18" gate="G$1" x="93.98" y="228.6"/>
-<instance part="SUPPLY3" gate="G$1" x="170.18" y="96.52"/>
+<instance part="SUPPLY3" gate="G$1" x="167.64" y="96.52"/>
 <instance part="SUPPLY5" gate="G$1" x="149.86" y="96.52"/>
 <instance part="SUPPLY19" gate="G$1" x="172.72" y="251.46"/>
 <instance part="JP8" gate="G$1" x="50.8" y="154.94"/>
@@ -24608,8 +24608,13 @@ VDD Range: 1.62-3.63V</text>
 <segment>
 <pinref part="JP7" gate="G$1" pin="3.3V"/>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
-<wire x1="190.5" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="88.9" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="88.9" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="G$1" pin="IOREF"/>
+<wire x1="190.5" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="99.06" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
+<junction x="187.96" y="88.9"/>
 </segment>
 <segment>
 <pinref part="JP7" gate="G$1" pin="VCC"/>
@@ -24675,8 +24680,8 @@ VDD Range: 1.62-3.63V</text>
 </segment>
 <segment>
 <pinref part="JP7" gate="G$1" pin="!RESET!@1"/>
-<wire x1="190.5" y1="96.52" x2="187.96" y2="96.52" width="0.1524" layer="91"/>
-<label x="187.96" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="190.5" y1="96.52" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
+<label x="185.42" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP7" gate="G$1" pin="!RESET!@2"/>
@@ -24883,8 +24888,8 @@ VDD Range: 1.62-3.63V</text>
 <segment>
 <pinref part="JP7" gate="G$1" pin="VIN"/>
 <pinref part="SUPPLY17" gate="G$1" pin="VIN"/>
-<wire x1="190.5" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="93.98" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="93.98" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -25371,8 +25376,8 @@ VDD Range: 1.62-3.63V</text>
 <segment>
 <pinref part="JP7" gate="G$1" pin="5V"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VUSB"/>
-<wire x1="190.5" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="91.44" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="91.44" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">

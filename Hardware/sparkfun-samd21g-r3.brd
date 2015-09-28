@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
@@ -213,9 +213,12 @@ R3 Breakout</text>
 <text x="36.449" y="15.875" size="0.889" layer="21" font="vector" ratio="15" align="center-right">GND</text>
 <text x="40.005" y="18.415" size="0.889" layer="21" font="vector" ratio="15" align="center-left">SWDIO</text>
 <text x="40.005" y="17.145" size="0.889" layer="21" font="vector" ratio="15" align="center-left">SWCLK</text>
-<text x="24.13" y="11.43" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">A13</text>
-<text x="26.67" y="11.43" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">B22</text>
-<text x="29.21" y="11.43" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">B23</text>
+<text x="24.13" y="11.43" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">38
+(A13)</text>
+<text x="26.67" y="11.43" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">30
+(B22)</text>
+<text x="29.21" y="11.43" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">31
+(B23)</text>
 <text x="20.32" y="17.78" size="0.889" layer="22" font="vector" ratio="15" rot="MR270" align="bottom-center">R-Prog</text>
 <text x="21.59" y="3.81" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">!RESET!</text>
 <text x="24.13" y="3.81" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">3.3V</text>
@@ -286,11 +289,36 @@ R3 Breakout</text>
 <wire x1="11.43" y1="22.225" x2="10.414" y2="22.225" width="0.254" layer="22"/>
 <wire x1="10.922" y1="16.637" x2="10.922" y2="15.621" width="0.254" layer="22"/>
 <wire x1="51.816" y1="31.75" x2="52.578" y2="31.75" width="0.2032" layer="21"/>
-<text x="24.13" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">A13</text>
-<text x="26.67" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">B22</text>
-<text x="29.21" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">B23</text>
 <text x="31.75" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">SWCLK</text>
 <text x="34.29" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">SWDIO</text>
+<text x="24.13" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">38
+(A13)</text>
+<text x="26.67" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">30
+(B22)</text>
+<text x="29.21" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">31
+(B23)</text>
+<text x="19.05" y="3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center-left">IOREF</text>
+<text x="19.05" y="3.81" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">IOREF</text>
+<text x="44.958" y="47.244" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="42.418" y="47.244" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="39.878" y="47.244" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="37.338" y="47.244" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="30.734" y="47.244" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="28.194" y="47.244" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="25.654" y="46.101" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="23.114" y="46.101" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="20.574" y="46.101" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="18.034" y="46.101" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">~</text>
+<text x="17.018" y="46.101" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="19.558" y="46.101" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="22.098" y="46.101" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="24.638" y="46.101" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="27.178" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="29.718" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="36.322" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="38.862" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="41.402" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
+<text x="43.942" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">~</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -3797,6 +3825,8 @@ design rules under a new name.</description>
 <wire x1="9.906" y1="24.13" x2="8.001" y2="26.035" width="0.254" layer="1"/>
 <wire x1="8.001" y1="26.035" x2="5.08" y2="26.035" width="0.254" layer="1"/>
 <wire x1="3.39" y1="26.035" x2="5.08" y2="26.035" width="0.254" layer="1"/>
+<contactref element="JP7" pad="IOREF"/>
+<wire x1="19.05" y1="2.54" x2="21.59" y2="5.08" width="0.254" layer="1"/>
 </signal>
 <signal name="VDDCORE">
 <contactref element="C10" pad="1"/>
