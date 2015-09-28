@@ -24177,7 +24177,7 @@ Program Connector</text>
 <text x="144.78" y="137.16" size="2.54" layer="94" align="top-left">Arduino R3 Headers</text>
 <text x="251.46" y="276.86" size="2.54" layer="94" align="top-left">ATSAMD21G</text>
 <text x="353.06" y="10.16" size="2.54" layer="94" align="top-left">Jim Lindblom</text>
-<text x="421.64" y="10.16" size="2.54" layer="94" align="top-left">v01</text>
+<text x="421.64" y="10.16" size="2.54" layer="94" align="top-left">v10</text>
 <wire x1="248.92" y1="0" x2="248.92" y2="35.56" width="0.2032" layer="97" style="longdash"/>
 <text x="2.54" y="53.34" size="2.54" layer="94" align="top-left">USB Host/Device Control</text>
 <text x="45.72" y="111.76" size="1.27" layer="97" rot="R180">Charge Current=
