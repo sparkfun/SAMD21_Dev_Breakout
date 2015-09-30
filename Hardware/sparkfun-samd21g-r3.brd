@@ -309,22 +309,28 @@ R3 Breakout</text>
 <dimension x1="0" y1="0" x2="7.366" y2="50.8" x3="-10.16" y3="25.4" textsize="1.27" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
 <dimension x1="0" y1="0" x2="7.366" y2="50.8" x3="3.683" y3="-10.16" textsize="1.27" textratio="15" layer="47" dtype="horizontal" unit="inch" precision="3"/>
 <dimension x1="0" y1="0" x2="34.29" y2="50.8" x3="17.145" y3="-12.7" textsize="1.27" textratio="15" layer="47" dtype="horizontal" unit="inch" precision="3"/>
-<text x="50.927" y="43.434" size="0.8128" layer="21" font="vector" ratio="15" align="top-center">Serial1</text>
-<wire x1="48.26" y1="52.07" x2="48.26" y2="42.291" width="0.2032" layer="21" style="shortdash"/>
-<wire x1="48.26" y1="42.291" x2="53.34" y2="42.291" width="0.2032" layer="21" style="shortdash"/>
-<wire x1="53.34" y1="42.291" x2="53.34" y2="52.07" width="0.2032" layer="21" style="shortdash"/>
+<text x="50.927" y="42.926" size="0.8128" layer="21" font="vector" ratio="15" align="top-center">Serial1</text>
+<wire x1="48.26" y1="52.07" x2="48.26" y2="43.307" width="0.2032" layer="21" style="shortdash"/>
+<wire x1="48.26" y1="43.307" x2="48.26" y2="41.783" width="0.2032" layer="21"/>
+<wire x1="48.26" y1="41.783" x2="53.34" y2="41.783" width="0.2032" layer="21"/>
+<wire x1="53.34" y1="41.783" x2="53.34" y2="43.307" width="0.2032" layer="21"/>
+<wire x1="53.34" y1="43.307" x2="53.34" y2="52.07" width="0.2032" layer="21" style="shortdash"/>
 <wire x1="53.34" y1="52.07" x2="48.26" y2="52.07" width="0.2032" layer="21" style="shortdash"/>
 <text x="49.53" y="49.53" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">TX/D1</text>
 <text x="52.07" y="49.53" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">RX/D0</text>
-<text x="28.067" y="16.383" size="0.8128" layer="21" font="vector" ratio="15" align="bottom-center">Serial</text>
-<wire x1="25.4" y1="8.89" x2="25.4" y2="17.526" width="0.2032" layer="21" style="shortdash"/>
-<wire x1="25.4" y1="17.526" x2="30.48" y2="17.526" width="0.2032" layer="21" style="shortdash"/>
-<wire x1="30.48" y1="17.526" x2="30.48" y2="8.89" width="0.2032" layer="21" style="shortdash"/>
+<text x="28.067" y="16.891" size="0.8128" layer="21" font="vector" ratio="15" align="bottom-center">Serial</text>
+<wire x1="25.4" y1="8.89" x2="25.4" y2="16.51" width="0.2032" layer="21" style="shortdash"/>
+<wire x1="25.4" y1="16.51" x2="25.4" y2="18.034" width="0.2032" layer="21"/>
+<wire x1="25.4" y1="18.034" x2="30.48" y2="18.034" width="0.2032" layer="21"/>
+<wire x1="30.48" y1="18.034" x2="30.48" y2="16.51" width="0.2032" layer="21"/>
+<wire x1="30.48" y1="16.51" x2="30.48" y2="8.89" width="0.2032" layer="21" style="shortdash"/>
 <wire x1="30.48" y1="8.89" x2="25.4" y2="8.89" width="0.2032" layer="21" style="shortdash"/>
 <text x="24.13" y="11.6586" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">38</text>
 <text x="26.67" y="11.6586" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">30/TX</text>
 <text x="29.21" y="11.6586" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">31/RX</text>
 <text x="39.37" y="3.9878" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">A0/DAC</text>
+<wire x1="53.34" y1="43.307" x2="48.26" y2="43.307" width="0.2032" layer="21"/>
+<wire x1="25.4" y1="16.51" x2="30.48" y2="16.51" width="0.2032" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
