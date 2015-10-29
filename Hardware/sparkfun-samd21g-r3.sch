@@ -24184,7 +24184,7 @@ Program Connector</text>
 <wire x1="248.92" y1="0" x2="248.92" y2="35.56" width="0.2032" layer="97" style="longdash"/>
 <text x="43.18" y="40.64" size="1.778" layer="97" rot="R180">Charge Current=
 ~256mA (1000V/3900)</text>
-<text x="50.8" y="50.8" size="1.778" layer="97" align="bottom-right">SJ1 connects/disconnects R9 
+<text x="50.8" y="50.8" size="1.778" layer="97" align="bottom-right">SJ1 connects/disconnects R1 
 from the MCP73831 PROG input.
 Cut the jumper if you want to
 use a custom resistor value.</text>
