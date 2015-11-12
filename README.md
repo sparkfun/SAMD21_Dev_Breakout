@@ -25,7 +25,7 @@ Product Versions
 
 Version History
 ---------------
-* [v1.0](https://github.com/sparkfun/SAMD21G_Dev_Breakout/tree/v10) - Initial release 
+* [v1.0](https://github.com/sparkfun/SAMD21_Dev_Breakout/tree/v10) - Initial release 
 
 License Information
 -------------------
