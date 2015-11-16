@@ -11,6 +11,7 @@ Repository Contents
 -------------------
 
 * **/Documentation** - Data sheets, additional product information
+* **/Firmware** - SAM_BA SAMD21 Bootloader
 * **/Hardware** - Eagle design files (.brd, .sch)
 * **/Production** - Production panel files (.brd)
 
